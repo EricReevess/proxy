@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $(function() {
+            $('.show-login-btn').on('click', function() {
+                $('.login-box').toggleClass('showed');
+                console.log(this);
+
+            })
+            $('.hide-login-btn').on('click', function() {
+                $('.login-box').toggleClass('showed');
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="show-login-btn">
+        <i class="fa fa-address-card" aria-hidden="true"></i> 显示登陆界面
+    </div>
+    <div class="login-box">
+        <div class="hide-login-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <form class="login-form" action="" method="POST">
+            <h1>Welcome</h2>
+                <input class="login-input" type="text" name="" placeholder="用户名" required>
+                <input class="login-input" type="password" name="" placeholder="密码" required>
+                <input class="login-btn" type="submit" name="" value="登陆">
+        </form>
+    </div>
+</body>
+
+</html>
