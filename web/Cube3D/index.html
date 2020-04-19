@@ -163,8 +163,8 @@
                 }
 
                 function drag(ev) {
-                    currentDegX = (ev.offsetX - keydownPosX);
-                    currentDegY = -(ev.offsetY - keydownPosY);
+                    currentDegX = (ev.offsetX - keydownPosX)/3;
+                    currentDegY = -(ev.offsetY - keydownPosY)/3;
                     cube.style.transform = `rotateX(${stopDegY+currentDegY}deg) rotateY(${stopDegX+currentDegX}deg)`;
                 }
             }
