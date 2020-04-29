@@ -89,7 +89,22 @@ body {
   position: absolute;
   z-index: 1;
 }
-        
+.tip {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  color: #222f3e;
+  font-weight: bolder;
+  transform: translate(-50%);
+  border-radius: 0 0 10px 10px;
+  background-color: #c8d6e5;
+  animation: tipIn 4s 1.2s alternate;
+}        
 @keyframes first {
   100% {
     background-color: #00cec9;
