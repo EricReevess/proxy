@@ -91,48 +91,58 @@ body {
 }
         
 @keyframes first {
-  100%{
-      background-color: #00cec9;
-      transform: rotateX(90deg) translateY(50px) ;
-      opacity: 1;
+  100% {
+    background-color: #00cec9;
+    transform: rotateX(90deg) translateY(50px);
+    opacity: 1;
   }
 }
 @keyframes second {
-  100%{
-      background-color: #ff7675;
-      transform: rotateX(-90deg) translateY(-50px);
-      opacity: 1;
-
+  100% {
+    background-color: #ff7675;
+    transform: rotateX(-90deg) translateY(-50px);
+    opacity: 1;
   }
 }
 @keyframes third {
-  100%{
-      background-color: #fd79a8;
-      transform: rotateY(-90deg) translateX(50px) ;
-      opacity: 1;
-
+  100% {
+    background-color: #fd79a8;
+    transform: rotateY(-90deg) translateX(50px);
+    opacity: 1;
   }
 }
 @keyframes fourth {
-  100%{
-      background-color:#55efc4 ;
-      transform: rotateY(90deg) translateX(-50px);
-      opacity: 1;
+  100% {
+    background-color: #55efc4;
+    transform: rotateY(90deg) translateX(-50px);
+    opacity: 1;
   }
 }
 @keyframes fifth {
-  100%{
-      background-color:#a29bfe ;
-      transform: rotateY(180deg) translateZ(50px);
-      opacity: 1;
+  100% {
+    background-color: #a29bfe;
+    transform: rotateY(180deg) translateZ(50px);
+    opacity: 1;
   }
 }
 @keyframes sixth {
-  100%{
-      background-color: #74b9ff;
-      transform: translateZ(50px);
-      opacity: 1;
-
+  100% {
+    background-color: #74b9ff;
+    transform: translateZ(50px);
+    opacity: 1;
   }
 }
-
+@keyframes tipIn {
+  0% {
+    top: -40px;
+  }
+  30% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    top: -40px;
+  }
+}
