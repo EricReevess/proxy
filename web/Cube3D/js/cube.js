@@ -1,7 +1,8 @@
-window.onload = function() {
+        window.onload = function() {
             let wrap = document.querySelector(".wrap");
             let cube = document.querySelector(".cube");
             let cover = document.querySelector(".cover");
+            let tip = document.querySelector(".tip > span")
 
             let keydownPosX;
             let keydownPosY;
@@ -10,6 +11,7 @@ window.onload = function() {
             let stopDegX = 20;
             let stopDegY = -15;
             if (/(Macintosh|iPhone|Android)/i.test(navigator.userAgent)) {
+                tip.innerHTML = `使用 <i class="fa fa-hand-point-down" aria-hidden="true"></i> 滑动可旋转立方体`;
 
                 cover.addEventListener("touchstart", touchstart)
                 cover.addEventListener("touchend", touchend)
@@ -45,6 +47,7 @@ window.onload = function() {
                     cube.children[4].style.transform = "rotateY(180deg) translateZ(0px)";
                 }
             } else {
+                tip.innerHTML = `使用 <i class="fa fa-mouse-pointer" aria-hidden="true"></i> 可旋转立方体`;
                 // cube.addEventListener("mousedown", mousedown)
                 // cube.addEventListener("mouseup", mouseup)
                 // cube.addEventListener("mouseout", mouseup)
@@ -52,6 +55,7 @@ window.onload = function() {
                 cover.addEventListener("mouseup", mouseup)
 
                 function mousedown(ev) {
+
                     keydownPosX = ev.offsetX;
                     keydownPosY = ev.offsetY;
                     cover.addEventListener("mousemove", drag);
