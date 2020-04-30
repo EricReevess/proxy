@@ -8,8 +8,8 @@
             let keydownPosY;
             let currentDegX = 0;
             let currentDegY = 0;
-            let stopDegX = 20;
-            let stopDegY = -15;
+            let stopDegX = 45;
+            let stopDegY = -30;
             if (/(Macintosh|iPhone|Android)/i.test(navigator.userAgent)) {
                 tip.innerHTML = `使用 <i class="fa fa-hand-point-down" aria-hidden="true"></i> 滑动可旋转立方体`;
 
