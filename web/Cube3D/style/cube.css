@@ -45,41 +45,41 @@ body {
 }
 
 .cube-face:nth-child(1) {
-  top: -100%;
-  transform: rotateX(90deg) translateY(50px) translateZ(80px);
-  transform-origin: bottom;
-  animation: first 1s .8s forwards;
+    top: -100%;
+    transform: rotateX(90deg) translateY(50px) translateZ(150px);
+    transform-origin: bottom;
+    animation: first 1.5s .8s forwards;
 }
 
 .cube-face:nth-child(2) {
-  bottom: -100%;
-  transform-origin: top;
-  transform: rotateX(-90deg) translateY(-50px) translateZ(80px);
-  animation: second 1s 1s forwards;
+    bottom: -100%;
+    transform-origin: top;
+    transform: rotateX(-90deg) translateY(-50px) translateZ(150px);
+    animation: second 1.5s 1s forwards;
 }
 
 .cube-face:nth-child(3) {
-  left: -100%;
-  transform-origin: right;
-  transform: rotateY(-90deg) translateX(50px) translateZ(80px);
-  animation: third 1s .4s forwards;
+    left: -100%;
+    transform-origin: right;
+    transform: rotateY(-90deg) translateX(50px) translateZ(150px);
+    animation: third 1.5s .4s forwards;
 }
 
 .cube-face:nth-child(4) {
-  right: -100%;
-  transform-origin: left;
-  transform: rotateY(90deg) translateX(-50px) translateZ(80px);
-  animation: fourth 1s .6s forwards;
+    right: -100%;
+    transform-origin: left;
+    transform: rotateY(90deg) translateX(-50px) translateZ(150px);
+    animation: fourth 1.5s .6s forwards;
 }
 
 .cube-face:nth-child(5) {
-  transform: rotateY(180deg) translateZ(130px);
-  animation: fifth 1s .2s forwards;
+    transform: rotateY(180deg) translateZ(150px);
+    animation: fifth 1.5s .2s forwards;
 }
 
 .cube-face:nth-child(6) {
-  transform: translateZ(130px);
-  animation: sixth 1s forwards;
+    transform: translateZ(150px);
+    animation: sixth 1.5s forwards;
 }
 
 .cover {
