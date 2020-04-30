@@ -36,6 +36,7 @@ window.onload = function() {
 
       function touchstart(ev) {
           clearInterval(timer);
+          cubeFace[1].textContent = ":D"
           keydownPosX = ev.touches[0].screenX;
           keydownPosY = ev.touches[0].screenY;
 
