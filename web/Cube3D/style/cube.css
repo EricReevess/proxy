@@ -6,6 +6,7 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+  background-color: #dfe6e9;
 }
 
 .wrap {
@@ -104,6 +105,7 @@ body {
   border-radius: 0 0 10px 10px;
   background-color: #c8d6e5;
   animation: tipIn 4s 1.2s alternate;
+  user-select: none;
 }        
 @keyframes first {
   100% {
